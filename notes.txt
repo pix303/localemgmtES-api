@@ -1,0 +1,22 @@
+POST /id
+    id
+    content
+    context
+    lang
+-> 200
+
+PUT /id
+    id
+    content
+    context
+    lang
+-> 200
+
+
+
+GET /id
+-> message + translaion
+
+
+GET /id/lang/idlang
+-> message
