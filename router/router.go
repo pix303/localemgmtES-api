@@ -16,7 +16,7 @@ func NewAPI() (*LocaleAPI, error) {
 
 	r := chi.NewRouter()
 	r.Use(middleware.Logger)
-	//r.Use(EnsureValidToken())
+	r.Use(EnsureValidToken())
 	r.Get("/welcome", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Welcome to locale-mgmt api"))
 	})
